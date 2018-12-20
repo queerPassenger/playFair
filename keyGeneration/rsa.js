@@ -98,8 +98,8 @@ class RSAEncrypt{
         return JSON.parse(JSON.stringify(this[key]));
     }
 }
-function generate(){
+/* function generate(){
     let inst=new RSAEncrypt(2,4);
     console.log('Keys',inst.getKeys());
 }
-setInterval(generate,1000);
+setInterval(generate,1000); */
