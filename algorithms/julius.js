@@ -28,9 +28,4 @@ function cryptic(type,inp,key){
     }
     return out;
 }
-let input='Hi how are you';
-input=JSON.stringify(input);
-let encrypted=cryptic('e',input,12);
-let decrypted=cryptic('d',encrypted,12);
-console.log('input-output',encrypted);
-console.log('output-input',decrypted);
+module.exports={cryptic}

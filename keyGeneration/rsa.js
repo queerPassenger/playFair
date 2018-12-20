@@ -1,4 +1,4 @@
-class RSAEncrypt{
+class Key{
     constructor(lmt=1,ulmt=5){
         this.lLPrmSet=lmt;
         this.uLPrmSet=ulmt;
@@ -98,8 +98,4 @@ class RSAEncrypt{
         return JSON.parse(JSON.stringify(this[key]));
     }
 }
-/* function generate(){
-    let inst=new RSAEncrypt(2,4);
-    console.log('Keys',inst.getKeys());
-}
-setInterval(generate,1000); */
+module.exports={Key}
